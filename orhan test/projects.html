@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Premium iç mimarlık hizmetleri - Modern, lüks ve minimalist tasarımlar">
+    <meta name="keywords" content="iç mimarlık, interior design, modern tasarım, lüks dekorasyon">
+    <meta name="author" content="Interior Studio">
+    
+    <meta property="og:title" content="Interior Studio | Projeler">
+    <meta property="og:description" content="Modern ve lüks iç mimarlık tasarımları">
+    <meta property="og:type" content="website">
+    
+    <title>Interior Studio | Projeler</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-text">Interior Studio</div>
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <div class="progress-bar"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <span class="logo-text">Interior<span class="logo-highlight">Studio</span></span>
+                </a>
+            </div>
+            
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Ana Sayfa</a>
+                <a href="about.html" class="nav-link">Hakkımızda</a>
+                <a href="projects.html" class="nav-link active">Projeler</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Tema değiştir">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Menü">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="mobile-menu">
+            <a href="index.html" class="mobile-link">Ana Sayfa</a>
+            <a href="about.html" class="mobile-link">Hakkımızda</a>
+            <a href="projects.html" class="mobile-link active">Projeler</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- PROJECTS HERO -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content animate-fade-up">
+                    <span class="page-subtitle">Portföyümüz</span>
+                    <h1 class="page-title">Seçkin Projelerimiz</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS FILTER -->
+        <section class="projects-filter-section">
+            <div class="container">
+                <div class="filter-container animate-fade-up">
+                    <button class="filter-btn active" data-filter="all">Tümü</button>
+                    <button class="filter-btn" data-filter="residential">Konut</button>
+                    <button class="filter-btn" data-filter="commercial">Ticari</button>
+                    <button class="filter-btn" data-filter="office">Ofis</button>
+                    <button class="filter-btn" data-filter="hospitality">Restoran & Cafe</button>
+                </div>
+                
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be loaded here dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROJECT DETAIL MODAL -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content modal-lg">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <!-- Dynamic project details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

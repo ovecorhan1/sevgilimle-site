@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>∞ Sonsuz Aşk ∞</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ANA SAYFA -->
+    <section id="home" class="page">
+        <div class="floating-hearts">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+        <div class="container">
+            <div class="hero-card">
+                <h1 class="hero-title">Sonsuz Aşk</h1>
+                <p class="hero-subtitle">Seninle her an, her saniye...</p>
+                <div class="hero-date">3 Şubat 2025</div>
+                <div class="scroll-down">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BİZİM HİKAYEMİZ -->
+    <section id="story" class="page">
+        <div class="container">
+            <h2 class="section-title">Sevgilime ufak bir tebessüm sebebi</h2>
+            <div class="story-grid">
+                <div class="story-item animate-on-scroll">
+                    <div class="story-number"></div>
+                    <p class="story-love-text">Sen benim en güzel tesadüfümsün. Gözlerin gökyüzünden bir parça.</p>
+                </div>
+                <div class="story-item animate-on-scroll">
+                    <div class="story-number"></div>
+                    <p class="story-love-text">Ellerin elimdeyken zaman duruyor. Kalbim senin ritminle atıyor.</p>
+                </div>
+                <div class="story-item animate-on-scroll">
+                    <div class="story-number"></div>
+                    <p class="story-love-text">Gülüşün dünyamın en güzel manzarası. Her baktığımda yeniden âşık oluyorum.</p>
+                </div>
+                <div class="story-item animate-on-scroll">
+                    <div class="story-number"></div>
+                    <p class="story-love-text">Bir ömür sen diye atan bir kalbim var. Sen varsan her şey anlamlı.</p>
+                </div>
+                <div class="story-item animate-on-scroll">
+                    <div class="story-number"></div>
+                    <p class="story-love-text">Zaman seninle anlam kazandı. Geçmiş, şimdi ve gelecek hep seninle.</p>
+                </div>
+                <div class="story-item animate-on-scroll">
+                    <div class="story-number"></div>
+                    <p class="story-love-text">Sonsuzluğu seninle yaşamak isterim. Yanımda ol yeter, gerisi hikâye.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOTOĞRAF GALERİSİ -->
+    <section id="gallery" class="page">
+        <div class="container">
+            <h2 class="section-title">Fotoğraf Galerisi</h2>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <!-- AŞK SÖZLERİ -->
+    <section id="love-words" class="page">
+        <div class="container">
+            <h2 class="section-title">Aşk Sözleri</h2>
+            <div class="words-card">
+                <div class="quote-icon">"</div>
+                <div id="wordDisplay" class="word-display"></div>
+                <div class="quote-icon close">"</div>
+                <div class="word-counter">
+                    <span id="currentWord">1</span>/<span id="totalWords">32</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AŞK SAYACI -->
+    <section id="counter" class="page">
+        <div class="container">
+            <h2 class="section-title">Aşk Sayacı</h2>
+            <div class="counter-card">
+                <div class="counter-grid">
+                    <div class="counter-block">
+                        <span class="counter-number" id="days">0</span>
+                        <span class="counter-label">Gün</span>
+                    </div>
+                    <div class="counter-block">
+                        <span class="counter-number" id="hours">00</span>
+                        <span class="counter-label">Saat</span>
+                    </div>
+                    <div class="counter-block">
+                        <span class="counter-number" id="minutes">00</span>
+                        <span class="counter-label">Dakika</span>
+                    </div>
+                    <div class="counter-block">
+                        <span class="counter-number" id="seconds">00</span>
+                        <span class="counter-label">Saniye</span>
+                    </div>
+                </div>
+                <div class="start-date">03.02.2025'ten beri</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FİNAL SAYFASI -->
+    <section id="final" class="page">
+        <div class="container">
+            <div class="final-card">
+                <div class="final-icon">∞</div>
+                <h2 class="final-title">Sonsuz Aşk</h2>
+                <p class="final-big-text">Seni Seviyorum</p>
+                <p class="final-small-text">Her gün, her an, sonsuza dek</p>
+                <div class="final-hearts">
+                    <span>❤️</span>
+                    <span>❤️</span>
+                    <span>❤️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÜZİK BUTONU -->
+    <button class="music-button" id="musicToggle">
+        <span class="music-icon">🎵</span>
+        <span class="music-text" id="musicText">Müziği Başlat</span>
+    </button>
+
+    <!-- MODAL -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">×</button>
+            <img id="modalImage" src="" alt="Büyük fotoğraf">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <!-- SES - MP3 DOSYAN -->
+    <audio id="bgMusic" loop preload="auto">
+        <source src="sarkin.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
